@@ -1,25 +1,34 @@
-const webpack = require('webpack');
+const webpack = require('webpack')
 
 module.exports = {
+  name: 'javascript',
+  
   entry: {
     main: './src/main.js'
-  }, 
+  },
 
   resolve: {
-    extensions: ['.js', '.jsx', '']
+    extensions: ['', '.js', '.jsx']
   },
 
   module: {
     loaders: [
-      {
-        test: '/\.jsx?$/',
-        exclude: /node_modules/,
+      { test: /\.js?$/, 
+        exclude: /node_modules/, 
+        loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react']
         }
       }
     ]
-  },
+  }, 
+
+  //helps separate dependencies out of bundles if you have multiple entry points 
+  // plugins: [
+  //   new webpack.optimize.CommonsChunkPlugin({
+  //     name: ['main']
+  //   })
+  // ],
 
   devtool: 'source-map'
 }
