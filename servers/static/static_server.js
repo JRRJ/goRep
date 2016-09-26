@@ -4,9 +4,10 @@ const express = require('express');
 const app = express();
 const routes = require('./routes');
 
-app.use(express.static(__dirname + '../src'));
+console.log(__dirname);
+app.use(express.static(__dirname + '/../../src'));
 routes(app);
 
 
 
-const server = app.listen(300);
+const server = app.listen(3000);
