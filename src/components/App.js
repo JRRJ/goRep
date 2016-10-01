@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Component dependencies
-
+import NavBar from './NavBar';
 
 // Class declaration
 class App extends React.Component {
@@ -11,8 +11,11 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1> WELCOME TO THE APP </h1>
+      <div id='main-app'>
+        <NavBar />
+        <div id='routedComponentsContainer'>
+          { this.props.children }
+        </div>
       </div>
     )
   }

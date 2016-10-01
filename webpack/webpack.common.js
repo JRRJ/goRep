@@ -1,8 +1,6 @@
-const webpack = require('webpack')
+const webpack = require('webpack');
 
 module.exports = {
-  name: 'javascript',
-  
   entry: {
     main: './src/main.js'
   },
@@ -13,7 +11,7 @@ module.exports = {
 
   module: {
     loaders: [
-      { test: /\.js?$/, 
+      { test: /\.jsx?$/, 
         exclude: /node_modules/, 
         loader: 'babel-loader',
         query: {

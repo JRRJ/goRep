@@ -5,9 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/server.js",
+    "start": "nodemon servers/static/static_server.js",
     "dev": "webpack-dev-server --config ./webpack/webpack.dev.js --content-base ./src --watch . --inline",
-    "prod": "webpack --config ./webpack/webpack.prod.js",
+    "prod": "webpack --config ./webpack/webpack.prod.js --content-base ./src",
     "build": "webpack --config ./webpack/webpack.prod.js --watch",
     "clean": "rm -rf src/dist",
     "rebuild": "npm run clean && npm run build"
@@ -19,6 +19,7 @@
     "path": "^0.12.7",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-router": "^2.8.1",
     "socket.io": "^1.4.8",
     "webrtc-adapter": "^2.0.3"
   },

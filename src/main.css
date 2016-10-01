@@ -1,0 +1,46 @@
+#main-app {
+  max-width: 1560px;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  border: 1px solid black;
+}
+
+
+.navbar > span {
+  margin-left: 2em;
+}
+
+.navbar > span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#app-logo {
+  font-size: 30px;
+  text-align: left;
+  float: left;
+}
+
+#app-logo:hover {
+  text-decoration: none;
+  cursor: default;
+}
+
+.nav-options {
+  font-size: 20px;
+  float: left;
+}
+
+.auth-options {
+  float: right;
+}
+
+#landing-page-img-container > img {
+  margin: 0 5em;
+  width: 90%;
+  height: 1%;
+}
+
