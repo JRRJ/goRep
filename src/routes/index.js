@@ -5,7 +5,7 @@ import LandingPage from '../components/LandingPage';
 import Profile from '../components/Profile';
 import Not_Found from '../components/Not_Found';
 import NewsPage from '../components/NewsPage';
-import VideosPage from '../components/VideosPage';
+import VideosPage from '../components/VideosPage/VideosPage';
 
 module.exports = (
   <Route path='/' component={App}>
