@@ -67,6 +67,7 @@ a#app-logo:hover {
   height: 100%;
 }
 #right-blurb {
+  text-align: center;
   align-self: center;
   position: absolute;
   left: 50px;
@@ -74,10 +75,28 @@ a#app-logo:hover {
   background-color: white;
   opacity: 0.9;
   height: 80%;
-  width: 450px;
-  font-size: 50px;
+  width: 30%;
+  min-width: 300px;
+  font-size: 40px;
   padding: 50px;
-  margin-bottom: 10px;
+  border-left: 6px solid antiquewhite;
+  border-top: 6px solid antiquewhite;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column wrap;
+}
+#signup-button {
+  margin-top: 2em;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  color: aliceblue;
+  background-color: #4499c3;
+}
+#signup-button:hover {
+  background-color: #1e516b;
+  cursor: pointer;
 }
 
 

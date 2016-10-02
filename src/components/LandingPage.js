@@ -10,7 +10,15 @@ class LandingPage extends React.Component {
     return (
       <div id='landing-page'>
         <img src={this.state.img}></img>
-        <div id='right-blurb'>Come and join the revolution. Take the stand to have your and your community's voice heard. Go Report #gorep</div>
+        <div id='right-blurb'>
+          <div>
+            Come and join the revolution. Take the stand to have your and your community's voice heard.
+            <br></br><br></br>
+            Go Report #gorep
+          </div>
+
+          <button id="signup-button"> Join the revolution </button>
+        </div>
       </div>
     )
   }
