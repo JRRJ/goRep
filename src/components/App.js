@@ -13,7 +13,7 @@ class App extends React.Component {
     return (
       <div id='main-app'>
         <NavBar />
-        <div id='routedComponentsContainer'>
+        <div id='content'>
           { this.props.children }
         </div>
       </div>

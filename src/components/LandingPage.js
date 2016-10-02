@@ -8,11 +8,9 @@ class LandingPage extends React.Component {
 
   render() {
     return (
-      <div id='landing-page-container'>
-        <div id='landing-page-img-container'>
-          <img src={this.state.img}></img>
-          <div className='info-blurb-left'></div>
-        </div>
+      <div id='landing-page'>
+        <img src={this.state.img}></img>
+        <div id='right-blurb'>Come and join the revolution. Take the stand to have your and your community's voice heard. Go Report #gorep</div>
       </div>
     )
   }

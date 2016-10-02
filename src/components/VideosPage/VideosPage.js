@@ -13,10 +13,12 @@ class VideosPage extends React.Component {
 
   render() {
     return (
-      <div id='videos-page-container'>
-        <CurrentVid />
+      <div id='video-page'>
+        <div id='current-video'>
+          <CurrentVid />
+          <CommentsBoard />
+        </div>
         <VideosList />
-        <CommentsBoard />
       </div>
     )
   }

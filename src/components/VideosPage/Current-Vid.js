@@ -10,7 +10,7 @@ class CurrentVid extends React.Component {
 
   render() {
     return (
-      <div id='current-vid-page-container'>
+      <div id='stream'>
         This is where the current video streaming will go
       </div>
     )

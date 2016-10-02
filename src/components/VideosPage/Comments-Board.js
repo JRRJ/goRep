@@ -10,7 +10,7 @@ class CommentsBoard extends React.Component {
 
   render() {
     return (
-      <div id='comments-board-container'>
+      <div id='comments'>
         This is where the comments would go
       </div>
     )

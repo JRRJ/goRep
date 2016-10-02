@@ -10,7 +10,7 @@ class VideosList extends React.Component {
 
   render() {
     return (
-      <div id='videos-list-container'>
+      <div id='videos-list'>
         This is where all the listed videos will show up
       </div>
     )
