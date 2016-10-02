@@ -167,4 +167,14 @@ a#app-logo:hover {
 }
 
 
+/******************/
+/******************/
+/******************/
+/*** Sign-In Component **/
+#sign-in-page {
+  padding: 2em;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
 

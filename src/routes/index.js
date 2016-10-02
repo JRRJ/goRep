@@ -6,6 +6,7 @@ import Profile from '../components/Profile';
 import Not_Found from '../components/Not_Found';
 import NewsPage from '../components/NewsPage';
 import VideosPage from '../components/VideosPage/VideosPage';
+import SignIn from '../components/SignIn';
 
 module.exports = (
   <Route path='/' component={App}>
@@ -13,6 +14,7 @@ module.exports = (
     <Route path='/profile' component={Profile} />
     <Route path='/news' component={NewsPage} />
     <Route path='/videos' component={VideosPage} />
+    <Route path='/sign-in' component={SignIn} />
     <Route path='*' component={Not_Found} />
   </Route>
 )

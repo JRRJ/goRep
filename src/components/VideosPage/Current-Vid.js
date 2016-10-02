@@ -23,7 +23,7 @@ class CurrentVid extends React.Component {
       <div id='stream'>
         {
           this.state.streamAvailable ? 
-            <video id="remoteVideo" autoplay></video> :
+            <video id="remoteVideo" autoPlay></video> :
             <div id='vid-unavailable'>This stream is unavailable currently</div>
         }
         <pre><button onClick={this.toggleAvail.bind(this)}> Toggle video available status </button></pre>
