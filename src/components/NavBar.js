@@ -6,7 +6,7 @@ class NavBar extends React.Component {
     super();
     this.state = {
       navOptions: ['News', 'Videos'],
-      authOptions: ['Sign-In']
+      URLS: {signIn: 'http://localhost:4000'}
     };
   }
 
@@ -22,11 +22,7 @@ class NavBar extends React.Component {
           }
         </div>
         <div id='auth-options'>
-          {
-            this.state.authOptions.map((option, idx) => 
-              <Link key={idx} to={'/'+option.toLowerCase()}>{option}</Link>
-            )
-          }
+          <a href={this.state.URLS.signIn}>Sign In</a>
         </div>
       </div>
     )
