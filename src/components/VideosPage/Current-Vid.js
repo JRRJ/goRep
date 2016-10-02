@@ -6,12 +6,27 @@ import React from 'react';
 class CurrentVid extends React.Component {
   constructor() {
     super();
+    this.state = {
+      streamAvailable: true
+    }
+  }
+
+  toggleAvail() {
+    this.setState({
+      streamAvailable : !this.state.streamAvailable
+    });
+    
   }
 
   render() {
     return (
       <div id='stream'>
-        This is where the current video streaming will go
+        {
+          this.state.streamAvailable ? 
+            <video id="remoteVideo" autoplay></video> :
+            <div id='vid-unavailable'>This stream is unavailable currently</div>
+        }
+        <pre><button onClick={this.toggleAvail.bind(this)}> Toggle video available status </button></pre>
       </div>
     )
   }
