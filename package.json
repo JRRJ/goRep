@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon servers/static/static_server.js",
     "dev": "webpack-dev-server --config ./webpack/webpack.dev.js --content-base ./src --watch . --inline",
-    "prod": "webpack --config ./webpack/webpack.prod.js --content-base ./src",
+    "prod": "webpack --config ./webpack/webpack.prod.js",
     "build": "webpack --config ./webpack/webpack.prod.js --watch",
     "clean": "rm -rf src/dist",
     "rebuild": "npm run clean && npm run build"
