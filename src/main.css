@@ -37,7 +37,7 @@ a:hover {
   font-size: 30px;
 }
 #nav-options > a:hover {
-  border-top: 3px solid green;
+  border-top: 3px solid #2bb3b3;
 }
 a#app-logo:hover {
   border: none;
@@ -49,7 +49,7 @@ a#app-logo:hover {
   align-items: center;
 }
 #auth-options > a:hover {
-  border-top: 3px solid green;
+  border-top: 3px solid #2bb3b3;
 }
 
 
