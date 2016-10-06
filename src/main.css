@@ -177,4 +177,48 @@ a#app-logo:hover {
   display: flex;
   justify-content: center;
 }
+#auth-form-container {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  height: 50%;
+}
+#auth-form-container > div {
+  font-size: 20px;
+  margin-bottom: 2em;
+}
+div#app-logo {
+  font-size: 25px;
+}
+div#login-form-title {
+  font-size: 40px;
+}
+
+#login-form {
+  border: 1px solid red;
+  padding: 2em;
+  display: flex;
+  flex-flow: column wrap;
+  width: 30%;
+  height: 100%;
+  flex-grow: 1;
+}
+
+#login-form > input {
+  font-size: 20px;
+  margin-bottom: 1em;
+  height: 50px;
+  width: 100%;
+}
+
+#login-button {
+  width: 102%;
+  height: 45px;
+  background-color: aliceblue;
+  font-size: 20px;
+}
+#login-button:hover {
+  background-color: grey;
+  cursor: pointer;
+};
 

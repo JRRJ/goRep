@@ -22,7 +22,7 @@ class NavBar extends React.Component {
           }
         </div>
         <div id='auth-options'>
-          <a href={this.state.URLS.signIn}>Sign In</a>
+          <Link to='/sign-in'>Sign In</Link>
         </div>
       </div>
     )

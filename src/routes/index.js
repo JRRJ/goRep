@@ -14,6 +14,7 @@ module.exports = (
     <Route path='/profile' component={Profile} />
     <Route path='/news' component={NewsPage} />
     <Route path='/videos' component={VideosPage} />
+    <Route path='/sign-in' component={SignIn} />
     <Route path='*' component={Not_Found} />
   </Route>
 )
